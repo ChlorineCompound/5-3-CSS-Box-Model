@@ -8,26 +8,78 @@
                 font-family: cursive;
             }
             .photo-gallery {
-                background: rgb(255, 254, 217);
+                background: rgb(161, 62, 62);
+                width: 200;
+                margin: auto;
             }
             .photo {
                 width: 200px;
             }
+            @keyframes myAnimation {
+  44% {
+    transform: scaleX(0.25) scaleY(5);
+  }
+  46% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  50% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  52% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  to {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+.animated-element {
+  animation-name: myAnimation;
+  animation-duration: 9.55s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.goo{
+    margin: auto;
+}
+
+.photo-gallery{
+    width: 400px;
+    height: 400px;
+    margin: auto
+
+
+}
+
+
+
+            
         </style>
     </head>
     <body>
 
-        <h1>Boxers are beautiful?</h1>
+        <h1 class="animated-element"; class="goo">Boxers are beautiful?</h1>
         
         <div class="photo-gallery">
         
-            <img class="photo" src="https://www.kasandbox.org/programming-images/animals/boxer-getting-tan.png">
+            <img class="photo" class="photo-gallery" src="https://www.kasandbox.org/programming-images/animals/boxer-getting-tan.png">
             
-            <img class="photo" src="https://www.kasandbox.org/programming-images/animals/boxer-laying-down.png">
+            <img class="photo" class="photo-gallery" src="https://www.kasandbox.org/programming-images/animals/boxer-laying-down.png">
             
-            <img class="photo" src="https://www.kasandbox.org/programming-images/animals/boxer-wagging-tongue.png">
+            <img class="photo" class="photo-gallery" src="https://www.kasandbox.org/programming-images/animals/boxer-wagging-tongue.png">
+
+            <p class="photo-gallery" >bebebebebebebebebeeeeeeeeeeeeeeeeeeeeeeeeb<br>
+                <br>bebebebebebe<br>bobobobobobobobobobobobobobob<br>bobobobobobob</p>
             
         </div>
-        
+        <div>
+
+            <h1><p>dog</p></h1>
+        </div>
     </body>
 </html>
